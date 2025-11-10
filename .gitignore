@@ -11,3 +11,5 @@ tmp/
 *.code-workspace
 .DS_Store
 .idea/
+.venv/
+venv/

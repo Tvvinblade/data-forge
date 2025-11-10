@@ -103,8 +103,10 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_CDC_USER: ${POSTGRES_CDC_USER:-cdc_reader}
       POSTGRES_CDC_PASSWORD: ${POSTGRES_CDC_PASSWORD:-cdc_reader_pwd}
+      POSTGRES_HOST_AUTH_METHOD: scram-sha-256
+      POSTGRES_INITDB_ARGS: "--auth-host=scram-sha-256"
     ports:
-      - "5432:5432"
+      - "0.0.0.0:50125:5432"
     volumes:
       - pg-data:/var/lib/postgresql/data
     healthcheck:
