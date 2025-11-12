@@ -266,7 +266,7 @@ services:
       resources:
         limits:
           cpus: '1.00'
-          memory: 1024M
+          memory: 768M
         reservations:
           cpus: '0.50'
           memory: 512M
@@ -307,11 +307,11 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1.00'
-          memory: 2048M
+          cpus: '0.75'
+          memory: 768M
         reservations:
           cpus: '0.50'
-          memory: 1024M
+          memory: 512M
     depends_on:
       spark-master:
         condition: service_healthy
@@ -345,11 +345,11 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1.00'
-          memory: 2048M
+          cpus: '0.75'
+          memory: 768M
         reservations:
           cpus: '0.50'
-          memory: 1024M
+          memory: 512M
     depends_on:
       spark-master:
         condition: service_healthy
@@ -487,8 +487,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1.00'
-          memory: 1024M
+          cpus: '0.75'
+          memory: 768M
         reservations:
           cpus: '0.50'
           memory: 512M
@@ -514,8 +514,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1.00'
-          memory: 1024M
+          cpus: '0.75'
+          memory: 768M
         reservations:
           cpus: '0.50'
           memory: 512M

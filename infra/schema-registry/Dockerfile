@@ -1,7 +1,7 @@
 FROM confluentinc/cp-schema-registry:latest
 
 USER root
-RUN yum install -y --allowerasing curl jq && yum clean all
+#RUN dnf install -y curl jq && dnf clean all
 
 COPY schemas/ /opt/schemas/
 COPY init-schemas.sh /opt/init-schemas.sh
