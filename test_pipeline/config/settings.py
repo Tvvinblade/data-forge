@@ -1,0 +1,6 @@
+KAFKA_BOOTSTRAP_SERVERS = "10.8.0.1:29092"
+CLICKHOUSE_HOST = "10.8.0.1"
+CLICKHOUSE_USER = "admin"
+CLICKHOUSE_PASSWORD = "admin"
+CLICKHOUSE_DB = "analytics"
+DATA_PATH = "/root/data-forge/test_pipeline/test_json"

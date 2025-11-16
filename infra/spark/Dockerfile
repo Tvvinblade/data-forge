@@ -1,4 +1,4 @@
-FROM bitnamilegacy/spark:3.5.6
+FROM bitnamilegacy/spark:3.5.3
 
 USER 0
 
