@@ -84,6 +84,7 @@ def spark_env_vars() -> dict[str, str]:
     """Return environment variables required for Spark submissions."""
 
     return {
+        "HOME": os.getenv("HOME", "/opt/bitnami/spark"),
         "AWS_REGION": os.getenv("AWS_REGION", "us-east-1"),
         "AWS_DEFAULT_REGION": os.getenv("AWS_DEFAULT_REGION", "us-east-1"),
         "AWS_ACCESS_KEY_ID": os.getenv("MINIO_ROOT_USER", "minio"),
